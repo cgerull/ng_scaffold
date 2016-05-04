@@ -7,3 +7,22 @@
 .navbar-default {
     background: none;
 }
+.header {
+    background: #ffffff;
+    border-bottom: 1px;
+}
+.content {
+    background: #f0f0f0;
+    font-size: 16px;
+}
+.footer {
+    background: #a0a0a0;
+    font-size: 14px;
+}
+h1 {
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
