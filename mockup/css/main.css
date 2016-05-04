@@ -1,0 +1,9 @@
+/* main.css for clausgerullphotography */
+.navbar-brand {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.navbar-default {
+    background: none;
+}
