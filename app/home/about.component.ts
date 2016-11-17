@@ -6,5 +6,5 @@ import { Component } from 'angular2/core';
 export class AboutComponent {
     public pageTitle: string = "About";
     public copyright: string = "(c) 2016 Copyright Claus Gerull"
-    public license: string = "Don't know yet"
+    public license: string = "MIT"
 }
