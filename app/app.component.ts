@@ -1,7 +1,7 @@
-import { Component } from 'angular2/core';
-import { HTTP_PROVIDERS } from 'angular2/http';
+import { Component } from '@angular/core';
+//import { HTTP_PROVIDERS } from '@angular/http';
 import 'rxjs/Rx'; //Load all the features
-import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
+//import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from '@angular/router';
 
 //import { ProductListComponent } from './products/product-list.component';
 //import { ProductService } from './products/product.service';
@@ -17,8 +17,8 @@ import { AboutComponent } from './home/about.component';
             <div class='container-flud'>
                 <a class='navbar-brand'>{{pageTitle}}</a>
                 <ul class='nav navbar-nav'>
-                    <li><a [routerLink]="['Welcome']">Home</a></li>
-                    <li><a [routerLink]="['About']">About</a></li>
+                    <li><a [routerLink]="['welcome']">Home</a></li>
+                    <li><a [routerLink]="['about']">About</a></li>
                 </ul>
             </div>
         </nav>
@@ -26,15 +26,15 @@ import { AboutComponent } from './home/about.component';
             <router-outlet></router-outlet>
         </div>
     </div>`,
-    directives: [ROUTER_DIRECTIVES],
-    providers: [HTTP_PROVIDERS,
-        ROUTER_PROVIDERS]
+    //directives: [ROUTER_DIRECTIVES],
+    //providers: [HTTP_PROVIDERS,
+    //    ROUTER_PROVIDERS]
 })
-@RouteConfig([
-    {path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true},
-    {path: '/about', name: 'About', component: AboutComponent},
-    //{path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent}
-])
+// @RouteConfig([
+//     {path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true},
+//     {path: '/about', name: 'About', component: AboutComponent},
+//     //{path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent}
+// ])
 export class AppComponent {
     pageTitle: string = "Angular 2 scaffold";    
 }
