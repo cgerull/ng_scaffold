@@ -2,7 +2,9 @@
   "name": "ng_scaffold",
   "version": "0.9.0",
   "author": "Claus Gerull <cgerull@live.com> (http://devop.gerull.nl/)",
-  "engine": "node 7.0.0",
+  "engines": {
+    "node": "7.0.0"
+  },
   "description": "Scaffold for simple Angular2 SPA's.",
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
