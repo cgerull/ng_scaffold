@@ -1,15 +1,17 @@
 {
   "name": "ng_scaffold",
   "version": "0.9.0",
-  "author": "Claus Gerull",
-  "description": "Scaffold for simple Angular 2 SPA's.",
+  "author": "Claus Gerull <cgerull@live.com> (http://devop.gerull.nl/)",
+  "engine": "node 7.0.0",
+  "description": "Scaffold for simple Angular2 SPA's.",
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
     "@angular/common": "2.2.1",
     "@angular/compiler": "2.2.1",
