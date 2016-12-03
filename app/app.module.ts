@@ -10,6 +10,7 @@ import "rxjs/Rx";
 import {AppComponent} from "./app.component";
 import {WelcomeComponent} from "./home/welcome.component";
 import {AboutComponent} from "./home/about.component";
+import { JServComponent } from './services/jserv.component';
 import {routing} from "./app.router";
 
 // Decorator
@@ -18,7 +19,8 @@ import {routing} from "./app.router";
     declarations: [
         AppComponent,
         WelcomeComponent,
-        AboutComponent
+        AboutComponent,
+        JServComponent
     ],
     // modules
     imports: [

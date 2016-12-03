@@ -13,5 +13,3 @@ You need to have a working node.js installation. I tested the scaffold with node
 * Run npm install to install the required libraries.
 * Build a folder structure under the app folder to match your application. E.G. if you build a blog add a posts folder where all your components to handle posts will go.
 * Edit index.html and change the name and tag for your main component.
-
-

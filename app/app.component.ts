@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
-//import { HTTP_PROVIDERS } from '@angular/http';
 import 'rxjs/Rx'; //Load all the features
-//import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from '@angular/router';
-
-//import { ProductListComponent } from './products/product-list.component';
-//import { ProductService } from './products/product.service';
-//import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { AboutComponent } from './home/about.component';
+import { JServComponent } from './services/jserv.component';
 
 @Component({
     selector: 'angula2-app',
@@ -18,6 +13,7 @@ import { AboutComponent } from './home/about.component';
                 <a class='navbar-brand'>{{pageTitle}}</a>
                 <ul class='nav navbar-nav'>
                     <li><a [routerLink]="['welcome']">Home</a></li>
+                    <li><a [routerLink]="['ip']">Services</a></li>
                     <li><a [routerLink]="['about']">About</a></li>
                 </ul>
             </div>
@@ -26,15 +22,8 @@ import { AboutComponent } from './home/about.component';
             <router-outlet></router-outlet>
         </div>
     </div>`,
-    //directives: [ROUTER_DIRECTIVES],
-    //providers: [HTTP_PROVIDERS,
-    //    ROUTER_PROVIDERS]
 })
-// @RouteConfig([
-//     {path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true},
-//     {path: '/about', name: 'About', component: AboutComponent},
-//     //{path: '/product/:id', name: 'ProductDetail', component: ProductDetailComponent}
-// ])
+
 export class AppComponent {
-    pageTitle: string = "Angular 2 scaffold";    
+    pageTitle: string = "Angular 2 scaffold";
 }
